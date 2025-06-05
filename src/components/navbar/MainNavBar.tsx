@@ -11,13 +11,14 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
+import MyPage from "../../pages/MyPage";
 
-export function Navbar2() {
+const MainNavBar:React.FC=()=> {
   return (
     <Navbar fluid rounded>
       <NavbarBrand href="https://flowbite-react.com">
-        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+        <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Muheto Hodal</span>
       </NavbarBrand>
       <div className="flex md:order-2">
         <Dropdown
@@ -28,8 +29,8 @@ export function Navbar2() {
           }
         >
           <DropdownHeader>
-            <span className="block text-sm">Bonnie Green</span>
-            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
+            <span className="block text-sm">Hodal Muheto</span>
+            <span className="block truncate text-sm font-medium">hodalmuheto@gmail.com</span>
           </DropdownHeader>
           <DropdownItem>Dashboard</DropdownItem>
           <DropdownItem>Settings</DropdownItem>
@@ -40,14 +41,17 @@ export function Navbar2() {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLink href="#" active>
+        <NavbarLink href="/" active>
           Home
         </NavbarLink>
-        <NavbarLink href="#">About</NavbarLink>
-        <NavbarLink href="#">Services</NavbarLink>
-        <NavbarLink href="#">Pricing</NavbarLink>
-        <NavbarLink href="#">Contact</NavbarLink>
+        <NavbarLink href="/about">About</NavbarLink>
+        <NavbarLink href="/services">Services</NavbarLink>
+        <NavbarLink href="/pricing">Pricing</NavbarLink>
+        <NavbarLink href="/contact">Contact</NavbarLink>
       </NavbarCollapse>
+       <MyPage />
     </Navbar>
   );
 }
+
+export default MainNavBar

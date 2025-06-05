@@ -1,27 +1,47 @@
-import { Button } from "flowbite-react";
-import { Navbar2 } from "./components/navbar/Navbar2";
-import { Table1 } from "./components/tables/Table1";
-import { Table2 } from "./components/tables/Table2";
-import { Form1 } from "./components/form/Form1";
-import { File1 } from "./components/File";
-export default function App() {
+// import { FooterComponent } from "./components/Footer";
+// import { Navbar2 } from "./components/navbar/Navbar2";
+// import HomeIndex from "./pages/homepage/Index";
+
+// export default function App() {
+//   return (
+//     <div  ><Navbar2 />
+//     <div >
+//      <HomeIndex />
+
+//      <FooterComponent />
+//     </div>
+//     </div>
+//   );
+// }
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { FooterComponent } from "./components/Footer";
+import MainNavBar from "./components/navbar/MainNavBar";
+import HomeIndex from "./pages/home_page/HomeIndex";
+import AboutUsIndex from "./pages/aboutus_page/AboutUsIndex";
+import ContactUsIndex from "./pages/contact_page/ContactUsIndex";
+import MyServicesIndex from "./pages/services_page/MyServicesIndex";
+import MyPricingIndex from "./pages/pricing_page/MyPricingIndex";
+
+
+// import NotFound from './pages/NotFound';
+
+const App: React.FC = () => {
   return (
-    <div>
-      <Navbar2 />
-      <h1>You are welcome to Flow bite site</h1>
-      <Button>Click me</Button>
-      <div>
-        <Table1 />
-      </div>
-      <div>
-        <Table2 />
-      </div>
-      <div>
-        <Form1 />
-      </div>
-      <div>
-        <File1 />
-      </div>
-    </div>
+    <Router>
+      <MainNavBar />
+      <Routes>
+        <Route path="/" element={<HomeIndex />} />
+        <Route path="/about" element={<AboutUsIndex />} />
+        <Route path="/services" element={<MyServicesIndex />} />
+        <Route path="/contact" element={<ContactUsIndex />} />
+        <Route path="/pricing" element={<MyPricingIndex />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+      <FooterComponent />
+    </Router>
   );
-}
+};
+
+export default App;
