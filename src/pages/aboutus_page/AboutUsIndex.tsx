@@ -1,14 +1,18 @@
-import  AddToCartCard  from "../../components/cards/AddToCartCard";
-import IntroSection from "./IntroSection";
+// import  AddToCartCard  from "../../components/cards/AddToCartCard";
+import AboutProjects from "./AboutProjects";
+import AboutUsContents from "./AboutUsContents";
+// import IntroSection from "./IntroSection";
 
 const  AboutUsIndex:React.FC = () =>  {
   return (
     <div>
       <section>
-        <IntroSection />
+        {/* <IntroSection />
+         */}
+         <AboutUsContents />
       </section>
       <section>
-        <AddToCartCard />
+      <AboutProjects />
       </section>
     </div>
   );

@@ -1,14 +1,14 @@
-import { SuccessToast } from "../../components/toast/SuccessToast"
-import IntroSection from "../aboutus_page/IntroSection"
+// import { SuccessToast } from "../../components/toast/SuccessToast"
 
-import HelloArea from "./HelloArea"
+import HelloArea_2 from "./HelloArea_2"
 
 const HomeIndex: React.FC = () => {
   return (
     <div>
-      <HelloArea />
-      <IntroSection />
-      <SuccessToast />
+      {/* <HelloArea />  */}
+      <HelloArea_2 />
+      {/* <IntroSection /> */}
+      {/* <SuccessToast /> */}
     </div>
   )
 }
