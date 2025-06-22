@@ -1,15 +1,15 @@
 
 import {
-  Avatar,
-  Dropdown,
-  DropdownDivider,
-  DropdownHeader,
-  DropdownItem,
+  // Avatar,
+  // Dropdown,
+  // DropdownDivider,
+  // DropdownHeader,
+  // DropdownItem,
   Navbar,
   NavbarBrand,
   NavbarCollapse,
   NavbarLink,
-  NavbarToggle,
+  // NavbarToggle,
 } from "flowbite-react";
 import MyPage from "../../pages/MyPage";
 import HodalLogo from "/images/Logo/Hodal_Logo_No_Bg.png";
@@ -20,7 +20,7 @@ const MainNavBar:React.FC=()=> {
         <img src={HodalLogo} className="mr-3 h-12 sm:h-9" alt="Flowbite React Logo" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Hodal</span>
       </NavbarBrand>
-      <div className="flex md:order-2">
+      {/* <div className="flex md:order-2">
         <Dropdown
           arrowIcon={false}
           inline
@@ -39,7 +39,7 @@ const MainNavBar:React.FC=()=> {
           <DropdownItem>Sign out</DropdownItem>
         </Dropdown>
         <NavbarToggle />
-      </div>
+      </div> */}
       <NavbarCollapse>
         <NavbarLink href="/" active>
           Home

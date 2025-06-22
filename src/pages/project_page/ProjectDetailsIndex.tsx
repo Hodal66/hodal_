@@ -52,8 +52,6 @@ const ProjectDetailsIndex: React.FC = () => {
 
         <div className="grid gap-2 text-sm text-gray-700 dark:text-gray-300 mb-4">
           <p><strong>Role:</strong> {project.role}</p>
-          {project.price !== undefined && <p><strong>Price:</strong> ${project.price}</p>}
-          <p><strong>Rating:</strong> {project.rating.toFixed(1)} / 5</p>
         </div>
 
         {project.link && (

@@ -1,21 +1,21 @@
-// import  AddToCartCard  from "../../components/cards/AddToCartCard";
+import AboutExpandedSection from "./AboutExpandedSection";
 import AboutProjects from "./AboutProjects";
-import AboutUsContents from "./AboutUsContents";
-// import IntroSection from "./IntroSection";
+import AboutSection from "./AboutSection";
 
-const  AboutUsIndex:React.FC = () =>  {
+const AboutUsIndex: React.FC = () => {
   return (
     <div>
       <section>
-        {/* <IntroSection />
-         */}
-         <AboutUsContents />
+        <AboutSection />
       </section>
       <section>
-      <AboutProjects />
+        <AboutExpandedSection />
+      </section>
+      <section>
+        <AboutProjects />
       </section>
     </div>
   );
-}
+};
 
 export default AboutUsIndex;

@@ -5,7 +5,7 @@ const HelloArea_2: React.FC = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 text-center lg:px-12 lg:py-16">
         <a
-          href="#"
+          href="project/1"
           role="alert"
           className="mb-7 inline-flex items-center justify-between rounded-full bg-gray-100 px-1 py-1 pr-4 text-sm text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
         >
@@ -39,7 +39,7 @@ const HelloArea_2: React.FC = () => {
         </p>
         <div className="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16">
           <a
-            href="#"
+            href="/contact"
             className="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
           >
             Get in Touch
@@ -58,8 +58,9 @@ const HelloArea_2: React.FC = () => {
           </a>
 
           <a
-            href="#"
+            href="https://www.youtube.com/watch?v=Oc6IeMPR2Wo&list=PLkfT1xp0mTRcyOGe6EasPCmav-G41m9Ae&ab_channel=HodalIT"
             className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            target="_blank"
           >
             <svg
               className="mr-2 -ml-1 h-5 w-5"
@@ -71,31 +72,6 @@ const HelloArea_2: React.FC = () => {
             </svg>
             View My Work
           </a>
-        </div>
-
-        <div className="mx-auto px-4 text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
-          <span className="font-semibold text-gray-400 uppercase">
-            FEATURED IN
-          </span>
-          <div className="mt-8 flex flex-wrap items-center justify-center text-gray-500 sm:justify-between">
-            <a
-              href="#"
-              className="mr-5 mb-5 hover:text-gray-800 lg:mb-0 dark:hover:text-gray-400"
-            >
-              <svg
-                className="h-8"
-                viewBox="0 0 132 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M39.4555 5.17846C38.9976 3.47767..."
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-            {/* Add more logos here if needed */}
-          </div>
         </div>
       </div>
     </section>

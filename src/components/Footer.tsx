@@ -40,31 +40,19 @@ export function FooterComponent() {
 
           {/* Link sections */}
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-            <div>
-              <FooterTitle title="About" />
-              <FooterLinkGroup col>
-                <FooterLink href="#about">Who I Am</FooterLink>
-                <FooterLink
-                  href="https://tailwindcss.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tailwind CSS
-                </FooterLink>
-              </FooterLinkGroup>
-            </div>
+           
             <div>
               <FooterTitle title="Follow Me" />
               <FooterLinkGroup col>
                 <FooterLink
-                  href="https://github.com/yourusername"
+                  href="https://github.com/Hodal66"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   GitHub
                 </FooterLink>
                 <FooterLink
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/muheto-hodal-23311a211/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -94,37 +82,37 @@ export function FooterComponent() {
           />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <FooterIcon
-              href="https://facebook.com/yourusername"
+              href="https://www.facebook.com/muheto.hodali.7"
               icon={BsFacebook}
               target="_blank"
               rel="noopener noreferrer"
             />
             <FooterIcon
-              href="https://instagram.com/yourusername"
+              href="https://www.instagram.com/muhetohodali/"
               icon={BsInstagram}
               target="_blank"
               rel="noopener noreferrer"
             />
             <FooterIcon
-              href="https://twitter.com/yourusername"
+              href="https://x.com/HodolMht"
               icon={BsTwitter}
               target="_blank"
               rel="noopener noreferrer"
             />
             <FooterIcon
-              href="https://github.com/yourusername"
+              href="https://github.com/Hodal66"
               icon={BsGithub}
               target="_blank"
               rel="noopener noreferrer"
             />
             <FooterIcon
-              href="https://dribbble.com/yourusername"
+              href="https://dribbble.com/hodal"
               icon={BsDribbble}
               target="_blank"
               rel="noopener noreferrer"
             />
             <FooterIcon
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/muheto-hodal-23311a211/"
               icon={BsLinkedin}
               target="_blank"
               rel="noopener noreferrer"
