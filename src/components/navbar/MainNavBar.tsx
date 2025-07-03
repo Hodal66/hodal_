@@ -44,10 +44,10 @@ const MainNavBar:React.FC=()=> {
         <NavbarLink href="/" active>
           Home
         </NavbarLink>
-        <NavbarLink href="/about">About</NavbarLink>
-        <NavbarLink href="/services">Services</NavbarLink>
-        <NavbarLink href="/pricing">Pricing</NavbarLink>
-        <NavbarLink href="/contact">Contact</NavbarLink>
+        <NavbarLink href="about">About</NavbarLink>
+        <NavbarLink href="services">Services</NavbarLink>
+        <NavbarLink href="pricing">Pricing</NavbarLink>
+        <NavbarLink href="contact">Contact</NavbarLink>
       </NavbarCollapse>
        <MyPage />
     </Navbar>
